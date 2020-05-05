@@ -1,5 +1,3 @@
-'use strict'
-
-var solution = require('./days/02');
+const solution = require('./days/05');
 
 solution.run();

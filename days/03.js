@@ -1,37 +1,36 @@
-
-'use strict'
-
 module.exports = {
-    run: function () {
-        let ransomNote = 'fejzkavtaxqeqvttndquaamuokgukgmyaieovamgchjlsnsituzqroywlykvqnedbcxpwfpheyerekuqnhcimvjpndbxhrohmlaxmgfsiudfgecqafjvowajmnipzybjuhgecgbaqluolhqndswzttnlhwckdwdjtdyoaskzhqgchlebrjavhtyziisfasprwstfowqgllozuyafkppickwgeyhciyzsrfycoqkfexosjlnxqhvujwssmoqjqofswrgolycjkciuglsyzyzcueqwbmokyhnsbmwonodwbqgdovaxwcyzdvnnldgfurgutjdevhuugqyvbywazyhtqduogosprvanffkzwficmjeihunbbskrtjaefkuriapihawofigbmqdhsfwxpbfnvzfmdsrvgagytagjloxvxuagjdusmztlxvtetufthgzgtjxbqxldyhkuicpxxudpvonjglpctqxplrcvearseyufmcoqythbuntbuhkelpdokrjnvcixhuhemdlisndazpmcnsdhzcjxwayicykrquptukfobwzpcrarzgzmboeprwodbyzeosivvrlhvbhqystxycognpmunvzozhsssneyyccetuidkgjxmercglejvmlmunnoiidtjhhqphzxrsomfsvvmfcigfxrzdzjsomxpqkktlnigojtvivmlvfdvlkdxbnwprjilsehnyjmtctobikssdvjgnyejdifawxufekaakxfwolmhighcqynwmdmciauzesslcdfyrfniyggbewodfhlpvuqtmwqayecojcmwfkrlamsesdaoovpalmeivqxnegcmhxznspmuzubfdkjaxzpwhxaslmivownnbbebqvyyvloerynyltqngcwrljvuboantskjhpbemvilvoavcswdfujxrzhopvkofypximxsrkgallvolqssmrldsccgfhgninxvwhqrktlmxrmzbsqhhhqzfilcbwnamzqxxeueksxvtvvtoxq';
-        let magazine = 'zgzvhchqrctqwqbyeitmlekyaiehrqrcxwmqvvaynyzjvfjwfvtwkfwcbxbznptzpmcxvapwhsipsjrqgahmuntcmxuvgvrzjatxxjhfnerhdawgvesutzdznaepvrgdnczlamnwbfpzfrisnausdnjstfzuxiezbhpfhayxremnlaulcmapvltnrjzddhzpwhidqiswyukziuytzhiuhygmqbxtbqafdtwiafmkqxwhidtnsluynytfguiwbmbfatrrudskfjmvcysmpzknkgmkinjienyljzdmxmradwzqewupfucbqinxqsrjpsvfyilhjrgaxlbbkbsnzrhmrtkqynifvfgzgkfjaadkqmnvdkvirmqttftibpnywankqgujlnxyqqxhnxcpmsfvyvghdluciefjiyziiacstiqrauvmvmmlsxnufjxzikuuxpcrhyadqhmwtshjxfbhuekvphyfnenpnpyruthxndwbdxkpcxbuvjdkipwqbdgjfyukygantkvicvcavjmydtitzurlhnhdfqmhzeprhhnqjjwukiyczgmejrayuuudytfxwkhpfmwqlemgkeawltwxvjxdverxlpnawpxscqcbaisrmlnujpifyqecewcmugfyfyexijyadbwysdjaamfjyjwukvwawtgmhqrufadchlejjwffnynhryuvbjtjljdldiixqurfjcjsuupnewqgshnvxwbkrnbivbxfcvalgmerigiuayuftnbpszkijiywgabwjlatfezizanykzruzqnkeaervdbbuewibtauvnngbsfvwsbaibmvpigkewwbnpvsjsmldamyglaspukkxuxxmyrmyxfkfapwwgizubfabfrcwfagxsburucuqfjjghekqxqebpddevcsknbutyjizqthhlvzvurusnsszbbfzbykqkucdaklkiqxbifeayatqfjcahykzaytehiuwqykfyaigyvxzsrujkrpnwvwwflxxblgxpdjclawccyaehtmregfuutaegqughaxrjnbfkqjhtnsvqilxurpknrzmxnqmlhwlnxxavhnyceecubtmwzcljapwkumbpyhpztngrrpcbwdnqgrnnpufuxzixfpmdbcslkfyewsmbgusveitpyzudivcwtygvdeirizgxywakudzbsvlexcjefvdneizhnumyrzrzktfkkrypcifkjvjlzuuhilxpepkraddpeyvgnuqqlafmiqqtgzfrcjygnmzndsiyhidbkfbepitjgmwaygscyhgbcfcmhtwqbxgmugphfvrbskqwzbihbtazndgpiusmgzxyzwtsxrfdesjqvwbskckzrbgimridmhdeakngemxevqifpjvuxthtxvwuiihikqygbryzmbxhzyvcdblhzrjppjpiarycvvyavfpgvulidsnsbvknvylxfawkcuypnxfjfrsukanwiwspinpbjdbgmkpqbkybadmdzhcaybkfxglyamxvgkcrqcyfnlrvivigpjmgymlrmvaapunpelukmdzynigchlcfrmebysdlmzwistgatmwgxrxwsxpwgytqlbgwxnrxcxwmifeenjzflwkkjnwjwagivcsfknuzceenmkudabhuwdpjycxgrqruyghxyxhkwggbemtbjakvdxdlsylddhtivcsyxbrvvexvyvmcztbjbznmpkmanebqcrdfmiyesqutnqyebcidskhulmanrcwnmdwjzllejaktknnudiluvsehyjmaescpxscsrehbbvieinhwrxjymntluassumgzykdskkyazrhrjmnwhxezvjbveurskjpljsrgjixxwisphbjzpbfemrasrjcnlsuxffcsrjnppipvnqcnghqlatwxhwpmxehucyjutpszwibpgylxlqsvzfqnmxwmcrpdyyvfgjqaiiyh';
-    
-        var canConstruct = function(ransomNote, magazine) {
-        	let magazineLetterObjMap = {};
-        	magazine.split('').forEach(letter => {
-        		if (magazineLetterObjMap[letter]) {
-        			magazineLetterObjMap[letter]++;
-        		} else {
-        			magazineLetterObjMap[letter] = 1;
-        		}
+    run() {
+        const ransomNote =
+            'fejzkavtaxqeqvttndquaamuokgukgmyaieovamgchjlsnsituzqroywlykvqnedbcxpwfpheyerekuqnhcimvjpndbxhrohmlaxmgfsiudfgecqafjvowajmnipzybjuhgecgbaqluolhqndswzttnlhwckdwdjtdyoaskzhqgchlebrjavhtyziisfasprwstfowqgllozuyafkppickwgeyhciyzsrfycoqkfexosjlnxqhvujwssmoqjqofswrgolycjkciuglsyzyzcueqwbmokyhnsbmwonodwbqgdovaxwcyzdvnnldgfurgutjdevhuugqyvbywazyhtqduogosprvanffkzwficmjeihunbbskrtjaefkuriapihawofigbmqdhsfwxpbfnvzfmdsrvgagytagjloxvxuagjdusmztlxvtetufthgzgtjxbqxldyhkuicpxxudpvonjglpctqxplrcvearseyufmcoqythbuntbuhkelpdokrjnvcixhuhemdlisndazpmcnsdhzcjxwayicykrquptukfobwzpcrarzgzmboeprwodbyzeosivvrlhvbhqystxycognpmunvzozhsssneyyccetuidkgjxmercglejvmlmunnoiidtjhhqphzxrsomfsvvmfcigfxrzdzjsomxpqkktlnigojtvivmlvfdvlkdxbnwprjilsehnyjmtctobikssdvjgnyejdifawxufekaakxfwolmhighcqynwmdmciauzesslcdfyrfniyggbewodfhlpvuqtmwqayecojcmwfkrlamsesdaoovpalmeivqxnegcmhxznspmuzubfdkjaxzpwhxaslmivownnbbebqvyyvloerynyltqngcwrljvuboantskjhpbemvilvoavcswdfujxrzhopvkofypximxsrkgallvolqssmrldsccgfhgninxvwhqrktlmxrmzbsqhhhqzfilcbwnamzqxxeueksxvtvvtoxq';
+        const magazine =
+            'zgzvhchqrctqwqbyeitmlekyaiehrqrcxwmqvvaynyzjvfjwfvtwkfwcbxbznptzpmcxvapwhsipsjrqgahmuntcmxuvgvrzjatxxjhfnerhdawgvesutzdznaepvrgdnczlamnwbfpzfrisnausdnjstfzuxiezbhpfhayxremnlaulcmapvltnrjzddhzpwhidqiswyukziuytzhiuhygmqbxtbqafdtwiafmkqxwhidtnsluynytfguiwbmbfatrrudskfjmvcysmpzknkgmkinjienyljzdmxmradwzqewupfucbqinxqsrjpsvfyilhjrgaxlbbkbsnzrhmrtkqynifvfgzgkfjaadkqmnvdkvirmqttftibpnywankqgujlnxyqqxhnxcpmsfvyvghdluciefjiyziiacstiqrauvmvmmlsxnufjxzikuuxpcrhyadqhmwtshjxfbhuekvphyfnenpnpyruthxndwbdxkpcxbuvjdkipwqbdgjfyukygantkvicvcavjmydtitzurlhnhdfqmhzeprhhnqjjwukiyczgmejrayuuudytfxwkhpfmwqlemgkeawltwxvjxdverxlpnawpxscqcbaisrmlnujpifyqecewcmugfyfyexijyadbwysdjaamfjyjwukvwawtgmhqrufadchlejjwffnynhryuvbjtjljdldiixqurfjcjsuupnewqgshnvxwbkrnbivbxfcvalgmerigiuayuftnbpszkijiywgabwjlatfezizanykzruzqnkeaervdbbuewibtauvnngbsfvwsbaibmvpigkewwbnpvsjsmldamyglaspukkxuxxmyrmyxfkfapwwgizubfabfrcwfagxsburucuqfjjghekqxqebpddevcsknbutyjizqthhlvzvurusnsszbbfzbykqkucdaklkiqxbifeayatqfjcahykzaytehiuwqykfyaigyvxzsrujkrpnwvwwflxxblgxpdjclawccyaehtmregfuutaegqughaxrjnbfkqjhtnsvqilxurpknrzmxnqmlhwlnxxavhnyceecubtmwzcljapwkumbpyhpztngrrpcbwdnqgrnnpufuxzixfpmdbcslkfyewsmbgusveitpyzudivcwtygvdeirizgxywakudzbsvlexcjefvdneizhnumyrzrzktfkkrypcifkjvjlzuuhilxpepkraddpeyvgnuqqlafmiqqtgzfrcjygnmzndsiyhidbkfbepitjgmwaygscyhgbcfcmhtwqbxgmugphfvrbskqwzbihbtazndgpiusmgzxyzwtsxrfdesjqvwbskckzrbgimridmhdeakngemxevqifpjvuxthtxvwuiihikqygbryzmbxhzyvcdblhzrjppjpiarycvvyavfpgvulidsnsbvknvylxfawkcuypnxfjfrsukanwiwspinpbjdbgmkpqbkybadmdzhcaybkfxglyamxvgkcrqcyfnlrvivigpjmgymlrmvaapunpelukmdzynigchlcfrmebysdlmzwistgatmwgxrxwsxpwgytqlbgwxnrxcxwmifeenjzflwkkjnwjwagivcsfknuzceenmkudabhuwdpjycxgrqruyghxyxhkwggbemtbjakvdxdlsylddhtivcsyxbrvvexvyvmcztbjbznmpkmanebqcrdfmiyesqutnqyebcidskhulmanrcwnmdwjzllejaktknnudiluvsehyjmaescpxscsrehbbvieinhwrxjymntluassumgzykdskkyazrhrjmnwhxezvjbveurskjpljsrgjixxwisphbjzpbfemrasrjcnlsuxffcsrjnppipvnqcnghqlatwxhwpmxehucyjutpszwibpgylxlqsvzfqnmxwmcrpdyyvfgjqaiiyh';
+
+        const canConstruct = function(ransomNote, magazine) {
+            const magazineLetterObjMap = {};
+            magazine.split('').forEach(letter => {
+                if (magazineLetterObjMap[letter]) {
+                    magazineLetterObjMap[letter]++;
+                } else {
+                    magazineLetterObjMap[letter] = 1;
+                }
             });
-            let ransomNoteArray = ransomNote.split('');
-        	for (let i = 0; i < ransomNoteArray.length; i++) {
-        		if (magazineLetterObjMap[ransomNoteArray[i]]) {
+            const ransomNoteArray = ransomNote.split('');
+            for (let i = 0; i < ransomNoteArray.length; i++) {
+                if (magazineLetterObjMap[ransomNoteArray[i]]) {
                     magazineLetterObjMap[ransomNoteArray[i]]--;
                     if (magazineLetterObjMap[ransomNoteArray[i]] == -1) {
                         return false;
                     }
-        		} else {
+                } else {
                     return false;
                 }
-            };
+            }
             return true;
         };
 
         console.time('ransomTime');
         console.log(canConstruct(ransomNote, magazine));
-        console.log("It took:");
+        console.log('It took:');
         console.timeEnd('ransomTime');
-    }
+    },
 };

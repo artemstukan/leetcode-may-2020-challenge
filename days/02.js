@@ -1,26 +1,24 @@
-
-'use strict'
 module.exports = {
-    run: function() {
-        let jewels = "aA";
+    run() {
+        const jewels = 'aA';
         // let jewels = 'z';
 
-        let stones = 'aAAbbbb';
+        const stones = 'aAAbbbb';
         // let stones = "aAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbbaAAbbbb";
         // let stones = 'ZZ';
 
         console.time('jewels');
 
         // 1st approach
-        var numJewelsInStones = function(jewels, stones) {
-        	let counter = 0;
-        	let jewelsSet = new Set(jewels);
-        	stones.split('').forEach(element => {
-        		if (jewelsSet.has(element)) {
-        			counter++;
-        		}
-        	});
-        	return counter;
+        const numJewelsInStones = function(jewels, stones) {
+            let counter = 0;
+            const jewelsSet = new Set(jewels);
+            stones.split('').forEach(element => {
+                if (jewelsSet.has(element)) {
+                    counter++;
+                }
+            });
+            return counter;
         };
 
         // 2nd approach (I think should be slightly faster than the 1st one)
@@ -54,7 +52,7 @@ module.exports = {
         // };
 
         console.log(numJewelsInStones(jewels, stones));
-        console.log("It took:");
+        console.log('It took:');
         console.timeEnd('jewels');
-    }
+    },
 };
